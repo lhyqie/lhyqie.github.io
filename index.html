@@ -1,1 +1,365 @@
-Hello World
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Home Page of Huayi Li, PhD in Computer Science, University of Illinois at Chicago">
+    <meta name="revisit-after" content="14 days">
+    <meta name="author" content="Huayi Li">
+
+    <title>Huayi Li, Department of Computer Science, University of Illinois at Chicago</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+    
+<style>
+html { font-size: 62.5%; }
+body { 
+    font-size: 1em;
+    min-width: 500px; 
+    min-height: 1000px;
+}
+
+@media (max-width: 300px) {
+    html { font-size: 50%; }
+}
+
+@media (min-width: 500px) {
+    html { font-size: 60%; }
+}
+
+@media (min-width: 700px) {
+    html { font-size: 80%; }
+}
+
+@media (min-width: 1200px) {
+    html { font-size: 100%; }
+}
+
+    
+#about_container {
+    margin-left: 2%;
+    width: 300px;
+    height: 400px;
+    color: #111;
+    text-align: center;
+    float:left;
+}
+
+li.publication{
+    text-align: left;
+    margin-left: 5%;
+    padding-left:1em;
+}
+    
+li.honor{
+    text-align: left;
+    margin-left: 10%;
+    padding-left: 1em;
+}
+    
+li.hobby{
+    text-align: left;
+    margin-left: 10%;
+    padding-left: 1em;
+}
+
+li.motto{
+    list-style-type:none;
+}
+    
+h3.service {
+    margin-left: 10%;
+}
+    
+li.service {
+    margin-left: 10%;
+    list-style-type:none;
+}
+
+</style>
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+	
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">About</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#publications">Publications</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#honors">Honors</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#hobbies">Hobbies</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#mottos">Mottos</a>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <!-- <li>
+                        <a class="page-scroll" href="https://www.cs.uic.edu/~hli/docs/resume.pdf" target="_blank">CV</a>
+                    </li> -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- About Section -->
+    <section id="intro" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" style="width:60%; margin-left:20%">
+                    <h1 align="center">Huayi Li <img src="images/name.png" width="100px"/> </h1>
+                    <h4 align="center">pronunciation similar to [Howie Lee]</h4>
+                    <p>&nbsp;</p>
+                    <div id="about_container"><img src="images/me.png" width="250px" height="325px" /> </div>
+                    <p>&nbsp;</p>
+					<p>&nbsp;</p>
+                    <p style="font-size: 13pt;  text-align:left;">
+                        I joined Google (Mountain View, California) in June 2016.
+                        Before that I was pursuing my Ph.D. degree in <a href="http://www.cs.uic.edu">Department of Computer Science</a>, <a href="http://www.uic.edu">University of Illinois at Chicago</a> supervised by <a href="http://www.cs.uic.edu/~liub/">Prof. Bing Liu</a>. I worked in the <a href="http://liu.cs.uic.edu">Social Media and Data Mining (SMDM)</a> lab focusing on Spam Detection, Sentiment Analysis and Social Network Analysis.           
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Publications Section -->
+    <section id="publications" class="publications-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 align="center">Publications</h1>
+                    <p>&nbsp;</p>
+                    <ol class="projectList" style="text-algn: left;">
+							<center>
+								<a href="https://scholar.google.com/citations?user=AKvz028AAAAJ&hl=en" target="_blank"> Here is my Google Scholar page.<img src="./images/logo_Google-Scholar.png" width="25px"></a>
+							</center>
+							
+							<p> <li class="publication"> <b>Huayi Li</b>, Geli Fei, Shuai Wang, Bing Liu, Weixiang Shao, Arjun Mukherjee, Jidong Shao. <a href="https://www.cs.uic.edu/~hli/docs/www17_coburst.pdf">Bimodal Distribution and Co-Bursting in Review Spam Detection</a>. <i>Proceedings of the 26th International Conference on World Wide Web (<b>WWW 2017</b>)</i>. April 5-7, Perth, Australia 
+							
+							<p> <li class="publication"> Geli Fei, <b>Huayi Li</b>, Bing Liu. Opinion Spam Detection in Social Networks. <i>Book chapter in Federico Pozzi, Elisabetta Fersini, Enza Messina and Bing Liu, editors, Sentiment Analysis in Social Networks. <b>Elsevier 2016</b>.</i></p>
+							
+							
+							<p> <li class="publication"> Rachel Harsley, Bhavesh Gupta, Barbara Di Eugenio, <b>Huayi Li</b>. <a href="https://www.cs.uic.edu/~hli/docs/naacl16_song_stock.pdf">Hit Songs' Sentiments Harness Public Mood & Predict Stock Market</a>. <i>Proceedings of the 7th Workshop on Computational Approaches to Subjectivity, Sentiment and Social Media Analysis. (<b>WASSA 2016</b>)</i>. June 12-17, San Diego, USA
+							
+							<p> <li class="publication"> <b>Huayi Li</b>, Zhiyuan Chen, Arjun Mukherjee, Bing Liu, Jidong Shao. <a href="https://www.cs.uic.edu/~hli/docs/icwsm15_dianping.pdf">Analyzing and Detecting Opinion Spam on a Large-scale Dataset via Temporal and Spatial Patterns</a>. <i>Proceedings of Ninth International AAAI Conference on Web and Social Media (<b>ICWSM 2015</b>, short paper)</i>, May 26-29, Oxford, UK. [<a href="https://www.cs.uic.edu/~hli/docs/icwsm15_dianping_poster.pdf">poster</a>]
+							
+							<p> <li class="publication"> <b>Huayi Li</b>, Arjun Mukherjee, Jianfeng Si, Bing Liu. <a href="https://www.cs.uic.edu/~hli/docs/aaai15_verbsenti.pdf">Extracting Verb Expressions Implying Negative Opinions</a>. <i>Proceedings of Twenty-Ninth AAAI Conference on Artificial Intelligence (<b>AAAI 2015</b>)</i>, January 25-29, Austin, USA
+							
+							<p> <li class="publication"> <b>Huayi Li</b>, Arjun Mukherjee, Bing Liu, Rachel Kornfield, Sherry Emery. <a href="https://www.cs.uic.edu/~hli/docs/icdm14_campaign.pdf">Detecting Campaign Promoters on Twitter using Markov Random Fields</a>. <i>Proceedings of IEEE International Conference on Data Mining (<b>ICDM 2014</b>)</i>, December 14-17, Shenzhen, China.
+		
+							<p> <li class="publication"> <b>Huayi Li</b>, Zhiyuan Chen, Bing Liu, Xiaokai Wei, Jidong Shao. <a href="https://www.cs.uic.edu/~hli/docs/icdm14_cpu.pdf">Spotting Fake Reviews via Collective Positive-Unlabeled Learning</a>. <i>Proceedings of IEEE International Conference on Data Mining (<b>ICDM 2014</b>, short paper)</i>, December 14-17, Shenzhen, China. [<a href="http://liu.cs.uic.edu/download/dianping/">dataset</a>]
+							
+							<p> <li class="publication"> <b>Huayi Li</b>, Arjun Mukherjee, Bing Liu, Jidong Shao. <a href="https://www.cs.uic.edu/~hli/docs/pu_spam.pdf">Spotting Fake Reviews using Positive-Unlabeled Learning</a>. <i><b>Journal of Computación y Sistemas 2014</b></i>.
+		
+							<p> <li class="publication"> Jianfeng Si, Arjun Mukherjee, Bing Liu, Sinno Jialin Pan, Qing Li, <b>Huayi Li</b>. <a href="https://www.cs.uic.edu/~hli/docs/emnlp14_socialstock.pdf">Exploiting Social Relations and Sentiment for Stock Prediction</a>. <i>Proceedings of the Conference on Empirical Methods in Natural Language Processing (<b>EMNLP 2014</b>)</i>, October 25-29, Doha, Qatar.
+							
+							<p> <li class="publication"> Jianfeng Si, Arjun Mukherjee, Bing Liu, Qing Li, <b>Huayi Li</b>, Xiaotie Deng. <a href="https://www.cs.uic.edu/~hli/docs/acl13_topicstock.pdf">Exploiting Topic based Twitter Sentiment for Stock Prediction</a>. <i>Proceedings of The 51st Annual Meeting of the Association for Computational Linguistics (<b>ACL 2013</b>)</i>, August 4-9, 2013, Sofia, Bulgaria.
+							
+							<!-- 
+							<p> <li class="publication"> <b>Huayi Li</b>. <a href="https://www.cs.uic.edu/~hli/docs/thesis.pdf">Detecting Opinion Spam in Commercial Review Websites</a>. <i> Ph.D. Thesis (University of Illinois at Chicago, 2016)</i>. 
+							-->
+							<p> <li class="publication"> <b>Huayi Li</b>. Detecting Opinion Spam in Commercial Review Websites. <i> Ph.D. Thesis (University of Illinois at Chicago, 2016)</i>. 
+				    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 align="center">Services</h1>
+                    <p>&nbsp;</p>
+                    <h3 class="service">Teaching Assistant</h3>
+                    <ul class="projectList">
+				        <p> <li class="service"><b>Discovering Computer Science</b>, Spring 2011</li>
+                        <p> <li class="service"><b>C/C ++ Programming for Engineers with MatLab</b>, Fall 2011</li>
+                        <p> <li class="service"><b>Database Systems</b>, Spring 2012</li>
+                        <p> <li class="service"><b>Data Structures and Discrete Mathematics</b>, Fall 2013</li>
+                    </ul>
+                    <h3 class="service">Journal/Conference Reviewer</h3>
+                    <ul class="projectList">
+						<p> <li class="service"><b>AAAI</b>: AAAI Conference on Artificial Intelligence, 2017 and 2018 (PC Member)</li>
+				        <p> <li class="service"><b>TKDE</b>: IEEE Transactions on Knowledge and Data Engineering, 2016</li>
+						<p> <li class="service"><b>DMKD</b>: Data Mining and Knowledge Discovery, 2016</li>
+                        <p> <li class="service"><b>TWEB</b>: ACM Transactions on the Web, 2015 and 2016</li>
+						<p> <li class="service"><b>CIKM</b>: ACM International Conference on Information and Knowledge Management, 2016</li>
+                        <p> <li class="service"><b>EMNLP</b>: Conference on Empirical Methods in Natural Language Processing, 2016 (PC Member)</li>
+                        <p> <li class="service"><b>Computer Speech and Language</b>, 2016</li>
+                        <p> <li class="service"><b>COMPUT J</b>: The Computer Journal, 2015</li>   
+                    </ul>
+					<h3 class="service">Volunteering</h3>
+					<ul class="projectList">
+						<p> <li class="service"> <b>Google Serve</b>: Beach Cleanup and Gardening Restoration with Aquarium of the Bay, San Francisco, June 2017 </li>
+					</ul>
+                </div>
+            </div>
+        </div>
+    </section>
+                                
+    <!-- Honors Section -->
+    <section id="honors" class="honors-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 align="center">Honors</h1>
+                    <p>&nbsp;</p>
+                    <ul class="projectList">
+				        <p> <li class="honor"> Trade Places with an Advertiser Course Certificate by Microsoft, July 2015 </li>
+                        <p> <li class="honor"> UIC Student Presenter Award, June 2015 </li>
+                        <p> <li class="honor"> AAAI International Conference on Web and Social Media (ICWSM) Student Grant Award, May 2015 </li>
+                        <p> <li class="honor"> Statement of accomplishment of Stanford Mining Massive Datasets course (with distinction), April 2015 </li>
+                        <p> <li class="honor"> UIC Graduate Student Council Travel Award, February 2015 </li> 
+                        <p> <li class="honor"> IEEE International Conference on Data Mining (ICDM) Travel Award, October 2014 </li>
+                        <p> <li class="honor"> First place of Microsoft College Coding Challenge (UIC division, solved all problems), October 2014 </li>
+                        <p> <li class="honor"> 2013 Nokia HERE hack week finalist, June 2013 (20 out of 70) </li>
+                        <p> <li class="honor"> Statement of accomplishment of Stanford Machine Learning course, January 2012 </li>
+                        <p> <li class="honor"> Outstanding student in Nanjing Normal University, November 2008 (top 10) </li>
+                        <p> <li class="honor"> Software Scholarship awarded by Jiangsu Province Government, September 2008 (top 1%) </li>
+                        <p> <li class="honor"> National Innovation Scholarship, December 2007 (top 5%) </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="hobbies-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 align="center">Hobbies</h1>
+                    <p>&nbsp;</p>
+				    <ul class="sublist">
+						<li class="hobby">Basketball
+						<p><a href="http://www.hoopchina.com">HoopChina</a> (equivalent to NBA@Reddit). <br> <a href="http://sports.qq.com/nba">NBA@QQ</a> (my favoriate NBA portal for news and streaming) <br>
+						Congratulations to Warriors' <b> 73 wins</b> and 2015, 2017 NBA championships.
+						</li>
+						<li class="hobby">Billiards
+						<p> My best ball game. 
+						</li>
+						<li class="hobby">Games <p><a href="http://www.warcraft.org/">Warcraft III</a> (My favoriate narrator: <a href="http://u.youku.com/user_show/id_UMTE0NDEzOTky.html">xiaoY</a>)
+                        <br> <a href="http://blog.counter-strike.net/">Counter Strike</a>
+                        <br> <a href="http://web.sanguosha.com/">Sanguosha</a>
+                        </li>
+                        <li class="hobby">Comics <p> Dragon Ball, Slam Dunk, Naruto </li>
+                        <li class="hobby">Algorithms <br> <a href="http://www.topcoder.com/">Topcoder</a> 
+                            <!-- <p> Here is <a href="http://www.topcoder.com/tc?module=MemberProfile&cr=22864979">my rank</a>-->
+                        </li>
+                            
+					</ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Motto Section -->
+    <section id="mottos" class="mottos-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 align="center">Mottos</h1>
+                    <p>&nbsp;</p>
+                    <ul class="sublist">
+                        <li class="motto"> Experience is what you get when you can't get what you want.</li> <br> 
+                        <li class="motto"> Improvement begins with "I".</li>  <br>
+                        <li class="motto"> Conceit is the enemy to progress. <br /> </li>
+                        <p>&nbsp;</p>
+                        <!-- <img src="images/ProudPeopleFail1.gif" width ="250" height="173"/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <img src="images/ProudPeopleFail2.gif" width ="250" height="173" /> -->
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+                                
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1  align="center">Contact Me</h1>
+                </div>
+                <p>&nbsp;</p>
+				<!--
+                <div class="col-lg-12">
+                    <img src="images/myemail.png" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="http://www.linkedin.com/in/huayili"> <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" border="0" alt="View Huayi Li's profile on LinkedIn"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://github.com/lhyqie"><img src="images/mygithub.png"></a>
+				</div>
+				-->
+				<div class="col-lg-12">
+                    <img src="images/myemail.png" width="160" height="30" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="http://www.linkedin.com/in/huayili"> <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" border="0" alt="View Huayi Li's profile on LinkedIn"></a>
+				</div>
+            </div>
+        </div>
+    </section>
+	
+	<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?u=pbu2&d=R731Uy6ds85-JteceI2Z0bjA8b-O9mNr6wIs9c2pomU"></script>
+	 
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+	
+	<a href="http://qualihub.en.alibaba.com/" style="visibility: hidden;">Qualihub Alibaba Business Page</a>
+	<a href="http://qualihub.net" style="visibility: hidden;">Qualihub Home page</a>
+	
+</body>
+
+</html>
+
