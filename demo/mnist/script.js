@@ -25,9 +25,9 @@ async function train(model, data) {
 	const container = { name: 'Model Training', styles: { height: '640px' } };
 	const fitCallbacks = tfvis.show.fitCallbacks(container, metrics);
   
-	const BATCH_SIZE = 100;
-	const TRAIN_DATA_SIZE = 1000;
-	const TEST_DATA_SIZE = 200;
+	const BATCH_SIZE = 512;
+	const TRAIN_DATA_SIZE = 5500;
+	const TEST_DATA_SIZE = 1000;
 
 	const [trainXs, trainYs] = tf.tidy(() => {
 		const d = data.nextTrainBatch(TRAIN_DATA_SIZE);
@@ -106,11 +106,17 @@ function init() {
 async function run() {  
 	const data = new MnistData();
 	await data.load();
-	const model = getModel();
-	tfvis.show.modelSummary({name: 'Model Architecture'}, model);
-	await train(model, data);
-	init();
-	alert("Training is done, try classifying your handwriting!");
+	var retrain = false;
+	if (retrain) {
+		model = getModel();		
+		await train(model, data);
+		model.save('downloads://my_mnist_model');
+		alert("Training is done, try classifying your handwriting!");
+	} else {
+		model = await tf.loadLayersModel("./my_mnist_model.json");
+		alert("Pre-trained Model is loaded, try classifying your handwriting!");
+	}
+	init();	
 }
 
 document.addEventListener('DOMContentLoaded', run);
