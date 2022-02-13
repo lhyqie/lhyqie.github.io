@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"Title 1","c":[{"t":"heading","d":2,"p":{"lines":[2,3]},"v":"<a href=\"http://www.google.com\">Head 2.1</a>"},{"t":"heading","d":2,"p":{"lines":[7,8]},"v":"<a href=\"http://www.google.com\">Head 2.2</a>","c":[{"t":"heading","d":3,"p":{"lines":[9,10]},"v":"Head 3","c":[{"t":"heading","d":4,"p":{"lines":[11,12]},"v":"Head 4","c":[{"t":"heading","d":5,"p":{"lines":[13,14]},"v":"Head 5","c":[{"t":"heading","d":6,"p":{"lines":[15,16]},"v":"Head 6","c":[{"t":"list_item","d":8,"p":{"lines":[17,18]},"v":"Content","c":[{"t":"list_item","d":10,"p":{"lines":[18,19]},"v":"Chapter 1","c":[{"t":"list_item","d":12,"p":{"lines":[19,20]},"v":"Chapter 1.1"},{"t":"list_item","d":12,"p":{"lines":[20,21]},"v":"Chapter 2.1","c":[{"t":"list_item","d":14,"p":{"lines":[21,22]},"v":"Chapter 2.1.1"},{"t":"list_item","d":14,"p":{"lines":[22,23]},"v":"Chapter 2.1.2"}]},{"t":"list_item","d":12,"p":{"lines":[23,24]},"v":"Chapter 3.1"}]},{"t":"list_item","d":10,"p":{"lines":[24,25]},"v":"Chapter 2","c":[{"t":"list_item","d":12,"p":{"lines":[25,26]},"v":"Chapter 2.1"}]}]}]}]}]}]}]},{"t":"heading","d":2,"p":{"lines":[27,28]},"v":"<a href=\"http://www.google.com\">Head 2.3</a>"}]})</script>
+</body>
+</html>
