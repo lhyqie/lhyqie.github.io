@@ -1,5 +1,4 @@
 #include "common.h"
-
 class Solution {
 public:  
   string findSmallestRegion(vector<vector<string>>& regions, const string& region1, const string& region2) {
