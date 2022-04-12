@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"root","d":0,"v":"","c":[{"t":"paragraph","d":1,"p":{"lines":[0,1]},"v":"Holdbacks: Understand the Long-term Effects of an Experiment"},{"t":"bullet_list","d":1,"p":{"lines":[2,18]},"v":"","c":[{"t":"list_item","d":2,"p":{"lines":[2,3]},"v":"Understanding long-term effects","c":[{"t":"list_item","d":4,"p":{"lines":[3,4]},"v":"Questions","c":[{"t":"list_item","d":6,"p":{"lines":[4,5]},"v":"Change loyalty, engagement, retention in the long run?"},{"t":"list_item","d":6,"p":{"lines":[5,6]},"v":"real improve or novelty effect"}]},{"t":"list_item","d":4,"p":{"lines":[6,7]},"v":"Long term experiments","c":[{"t":"list_item","d":6,"p":{"lines":[7,8]},"v":"Ecosystem changes (seasonality / real-world changes)"},{"t":"list_item","d":6,"p":{"lines":[8,9]},"v":"Network effects"},{"t":"list_item","d":6,"p":{"lines":[9,10]},"v":"Noveltyh and learning effects"}]},{"t":"list_item","d":4,"p":{"lines":[10,11]},"v":"Opportunity costs","c":[{"t":"list_item","d":6,"p":{"lines":[11,12]},"v":"Keep legacy code paths for longer"},{"t":"list_item","d":6,"p":{"lines":[12,13]},"v":"Lost impact by withholding the new feature for a % of users"}]},{"t":"list_item","d":4,"p":{"lines":[13,14]},"v":"Ablation Study vs Holdback","c":[{"t":"list_item","d":6,"p":{"lines":[14,15]},"v":"Disadvantage: users are guaranteed to have seen the feature before it's removed, whereas for holdbacks this is not the case."},{"t":"list_item","d":6,"p":{"lines":[15,16]},"v":"Advantage: test out the reverse novelty effect"}]},{"t":"list_item","d":4,"p":{"lines":[16,17]},"v":"Best practices","c":[{"t":"list_item","d":6,"p":{"lines":[17,18]},"v":"run for all critical and major launches, esp. for high visible and user-impacting features."}]}]}]}],"p":{}})</script>
+</body>
+</html>
