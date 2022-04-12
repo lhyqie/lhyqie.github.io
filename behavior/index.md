@@ -59,10 +59,8 @@
   - Creditility, Reliability, and Honesty
   - Self Validation
     - get over imposter syndrome
-    - dody Language
+    - Body Language
     - self reflection (write retrospective doc)
-
-
 
 * Communication
   - understand your audience 
@@ -75,10 +73,14 @@
   - Don't care too much about total compensation in early career stage
   - Fast growing company that is winning
   - Well-established company but in a fast growth project/team
-  - 大公司到了一定的阶段，能够学到的东西就变少了. ROI 在diminishing
+  - When company size grows to certain degree, you'll learn less and less. ROI is diminishing.
+
+* Product Sense
+  - Competition and Differentiation
+
 
 * Misc
-  
+  - TBD
 
 * Books to read
   - Never split the difference
