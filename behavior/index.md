@@ -80,7 +80,13 @@
 
 
 * Misc
-  - TBD
+  - Taking initiatives
+  - Be good with follow ups
+  - Quality of deliverables
+  - Take calculated risks and honour commitments as far as possible
+  - Flag early if things are not ideal so we can course correct
+  - Help the team members and team look good in front of stakeholders
+
 
 * Books to read
   - Never split the difference
