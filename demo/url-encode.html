@@ -1,0 +1,50 @@
+<html>
+
+<head>
+	<title>URL encode/decode</title>
+</head>
+
+<body>
+
+	<h4>Input string:</h4>
+	<textarea id=input rows=10 cols=80></textarea>
+	<table>
+		<tr>
+			<td width=50% align=center>
+				<input type=button value="url-encode" onclick='javascript:output.value = encodeURI(input.value);'>
+			</td>
+			<td width=50% align=center>
+				<input type=button value="url-decode" onclick='javascript:output.value = decodeURI(input.value);'>
+			</td>
+		</tr>
+		<tr>
+			<td width=50% align=center>
+				<input type=button value="url-component-encode"
+					onclick='javascript:output.value = encodeURIComponent(input.value);'>
+			</td>
+			<td width=50% align=center>
+				<input type=button value="url-component-decode"
+					onclick='javascript:output.value = decodeURIComponent(input.value);'>
+			</td>
+		</tr>
+		<tr>
+			<td width=50% align=center>
+				<input type=button value="escape" onclick='javascript:output.value = escape(input.value);'>
+			</td>
+			<td width=50% align=center>
+				<input type=button value="unescape" onclick='javascript:output.value = unescape(input.value);'>
+			</td>
+		</tr>
+		<tr>
+			<td colspan=2 align=center>
+				<input type=button value="Clear" onclick='javascript:input.value = ""; output.value = "";'>
+			</td>
+		</tr>
+	</table>
+	<hr>
+	<h4>Result string:</h4>
+	<textarea id=output rows=10 cols=80 readonly></textarea>
+
+</body>
+
+</html>
